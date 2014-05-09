@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">-->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+</head> 
+
+<body> 
+
+<div data-role="page" id="list_page">
+
+	<div data-role="header" data-add-back-btn="true">
+		<h1>Ticket Manager</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<a data-role="button" id="delete_data" href="#">Borrar datos adfadfafsasfd</a>
+		<table data-role="table" id="ticket-list" data-mode="columntoggle" class="table-stroke">
+			<thead>
+				<th data-priority="2">ID</th>
+				<th data-priority="3">Fecha</th>
+				<th data-priority="1">Hora</th>
+				<th>Duracion</th>
+				<th data-priority="2">Acciones</th>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div><!-- /content -->
+
+	<!--<div data-role="footer">
+		<h4>Nombre de empresa</h4>
+	</div><!-- /footer -->
+
+<!-- /page -->
+		
+</div>
+	 <!--<script type="text/javascript" src="phonegap.js"></script>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mobile-1.4.2.min.js"></script>
+		<script type="text/javascript" src="js/tickets.js"></script>
+		<script type="text/javascript">
+			navitagor.notification.alert("Otra prueba");
+		</script>-->
+</body>
+</html>

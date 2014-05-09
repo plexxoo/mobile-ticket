@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+	<title>Page Title</title> 
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- cuidado si no se coloca esto -->
+<!--<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">-->
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.2.min.css" />
+</head> 
+
+<body> 
+
+<div data-role="page" id="new_ticket_page">
+
+	<div data-role="header" data-add-back-btn="true">
+		<h1>Nuevo ticket</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">	
+		<form id="new_ticket_form">
+		<!--<div role="main" class="ui-content">-->
+		<div class="ui-field-contain">
+			<label for="select-choice" class="select">Proyecto:</label>
+			<select name="select-choice" id="select-choice" data-native-menu="false">
+				<option></option>
+				<option value="project1">Proyecto 1</option>
+				<option value="project2">Proyecto 2</option>
+				<option value="project3">Proyecto 3</option>
+				<option value="project4">Proyecto 4</option>
+			</select>
+		</div>
+		<div class="ui-field-contain">
+			<label for="date">Fecha:</label>
+			<input type="date" name="date" id="date" value="">
+		</div>
+		<div class="ui-field-contain">
+			<label for="time">Hora:</label>
+			<input type="time" name="time" id="time" value="">
+		</div>
+		<div class="ui-field-contain">
+			<label for="slider-step">Duracion (minutos):</label>
+			<input type="range" name="slider-step" id="slider-step" value="60" min="0" max="500" step="5" />	
+
+		</div>
+		<div class="ui-field-contain">
+			<label for="actions" class="input">Acciones:</label>
+			<textarea id="actions" name="actions" rows="10"></textarea>
+		</div>
+		<!--</div>-->
+		<a href="#" data-role="button" data-theme="b" data-icon="check" id="new_ticket_btn">Crear </a>
+		</form>	
+	</div>
+		
+	</div><!-- /content -->
+
+	<!--<div data-role="footer">
+		<h4>Nombre de empresa</h4>
+	</div><!-- /footer -->
+</div>
+<!-- /page -->
+
+</body>
+</html>
